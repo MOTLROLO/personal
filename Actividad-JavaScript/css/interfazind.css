@@ -1,0 +1,22 @@
+body {
+    /* background: #7F7FD5;
+    background: -webkit-linear-gradient(to right, #c27f02, #ddae15, #db241d);
+    background: linear-gradient(to right, #c27f02, #ddae15, #be3833); */
+
+    background: #c04848;
+    background: -webkit-linear-gradient(to right, #c04848, #480048);
+    background: linear-gradient(to right, #c04848, #480048);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+#descripcion {
+    resize: none;
+}
+
+.centrado {
+    text-align: center;
+    vertical-align: middle;
+}

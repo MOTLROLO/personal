@@ -1,0 +1,58 @@
+body {
+    font-family: 'serif';
+    margin: 0;
+    padding: 0;
+    background: #4CB8C4;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3CD3AD, #4CB8C4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3CD3AD, #4CB8C4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+table {
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 18px;
+}
+
+thead {
+    font-family: serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+label {
+    text-align: center;
+    font-style: bold;
+    font-size: 18px;
+}
+
+input {
+    text-align: center;
+    display: block;
+    margin: 0 auto 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#botones {
+    text-align: center;
+}
+
+.boton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 10rem;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 10px;
+}
