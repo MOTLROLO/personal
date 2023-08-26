@@ -1,0 +1,49 @@
+{% extends 'plantilla.html' %} {% block title %}Chat bot{% endblock %} {% block
+body %}
+<style>
+  body {
+    background: #7f7fd5;
+    background: -webkit-linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+    background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  }
+</style>
+
+<nav class="navbar sticky-bottom bg-dark">
+  <div class="container-fluid">
+    <p class="navbar-brand text-white">Bienvenido!...</p>
+  </div>
+</nav>
+
+<div class="container text-center mt-5">
+  <h1>Chat Bot con Django</h1>
+</div>
+
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div id="chat-container">
+        {% for message in messages %}
+        <p class="message">{{ message }}</p>
+        {% endfor %} {% if response %}
+        <p class="bot-message"><strong>Bot:</strong> {{ response }}</p>
+        {% endif %}
+      </div>
+
+      <form id="chat-form" method="post" action="{% url 'chatbot_view' %}">
+        {% csrf_token %}
+        <div class="input-group mt-3">
+          <input
+            autofocus
+            type="text"
+            class="form-control"
+            name="user_input"
+            id="user-input"
+            placeholder="Escribe un mensaje..."
+          />
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
