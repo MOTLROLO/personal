@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(img/empresa.png) no-repeat left top fixed;
+  background-size: cover;
+}
+
+.informacion {
+  padding: 20px;
+}
+
+.img_informacion img {
+  width: 11rem;
+  height: 8rem;
+}
+
+.formulario {
+  text-align: center;
+  padding: 20px;
+}
+
+.img_fomulario img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.input_nombre,
+.input_password {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 20px;
+}
+
+.input_nombre input,
+.input_password input {
+  width: 20.5rem;
+}
+
+.botones_form {
+  margin-top: 20px;
+}
+
+.botones_form p {
+  margin-top: 10px;
+}
